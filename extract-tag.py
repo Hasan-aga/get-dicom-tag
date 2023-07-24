@@ -23,7 +23,7 @@ def main():
 
     args = parser.parse_args()
 
-    tag_values = extract_dicom_tag(args.directory, args.keyword)
+    tag_values = extract_dicom_tag(args.directory, 'BodyPartExamined')
     print(tag_values)
 
 if __name__ == '__main__':
